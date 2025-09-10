@@ -15,12 +15,3 @@ pip install "autogen-ext[openai]"
 ```shell
 pip install -U "autogen-ext[mcp]"
 ```
-
-### [autogen_basics1.py](autogen_basics1.py)
-- https://microsoft.github.io/autogen/stable//user-guide/agentchat-user-guide/quickstart.html
-- https://microsoft.github.io/autogen/stable//user-guide/agentchat-user-guide/tutorial/agents.html#assistant-agent
-- https://microsoft.github.io/autogen/stable//user-guide/agentchat-user-guide/tutorial/models.html#openai
-
-### [autogen_basics2.py](autogen_basics2.py)
-- https://microsoft.github.io/autogen/stable//user-guide/agentchat-user-guide/tutorial/agents.html#multi-modal-input
-
