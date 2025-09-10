@@ -32,6 +32,7 @@ async def main():
                             system_message="You are a curious student. Ask questions and show your thinking process. Keep everything not more than 2 sentence.")
 
     # Using RoundRobinGroupChat team from several other teams. Termination condition is 4 convos.
+    # Note: The order inside the participant matters to tell who starts the convo.
     team = RoundRobinGroupChat(participants=[agent1, agent2], termination_condition=MaxMessageTermination(max_messages=4))
 
     await Console(team.run_stream(task="Let's discuss about beauty of Montreal."))
