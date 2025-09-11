@@ -32,8 +32,6 @@ async def main():
      )
 
     async with McpWorkbench(fs_server_params) as fs_wb:
-        openai_model_client  = OpenAIChatCompletionClient(model="gpt-4o", api_key=os.getenv("OPENAI_API_KEY"))
-
 
         # Note we are passing workbench param
         agent = AssistantAgent(name="Teacher", model_client=openai_model_client, workbench=fs_wb,
