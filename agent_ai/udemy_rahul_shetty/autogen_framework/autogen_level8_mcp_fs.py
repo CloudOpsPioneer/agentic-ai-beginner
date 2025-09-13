@@ -31,6 +31,8 @@ async def main():
          read_timeout_seconds=60
      )
 
+    # For multiple workbench ->
+    # async with McpWorkbench(fs_server_params) as fs_wb, McpWorkbench(playwright_params) as pw _wb:
     async with McpWorkbench(fs_server_params) as fs_wb:
 
         # Note we are passing workbench param
